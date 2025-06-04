@@ -149,6 +149,16 @@ Visualisasi bar plot di atas menunjukkan distribusi frekuensi dari 20 kombinasi 
 
 Tahap data preparation merupakan proses penting sebelum membangun model machine learning, termasuk sistem rekomendasi. Dalam studi kasus ini, data perlu disiapkan agar sesuai dengan kebutuhan dua pendekatan yang digunakan, yaitu content-based filtering dan collaborative filtering. Masing-masing pendekatan memiliki karakteristik dan kebutuhan data yang berbeda, sehingga proses persiapan dilakukan secara terpisah untuk memastikan setiap model dapat bekerja secara optimal.
 
+Secara umum, langkah-langkah awal berikut dilakukan sebelum masuk ke persiapan spesifik per pendekatan:
+
+- Penghapusan data film dengan genre kosong: Baris film yang memiliki nilai genres = (no genres listed) dihapus karena tidak memiliki informasi yang berguna untuk content-based filtering. Langkah ini dilakukan dengan perintah:
+
+<img width="429" alt="image" src="https://github.com/user-attachments/assets/3c76a117-b682-4f1f-9bec-b4ed1b7f3a55" />
+
+- Penghapusan kolom yang tidak relevan: Kolom timestamp pada dataset ratings dihapus karena tidak dibutuhkan dalam proses pemodelan, baik untuk content-based maupun collaborative filtering. Langkah ini dilakukan dengan:
+
+<img width="416" alt="image" src="https://github.com/user-attachments/assets/c3a05e25-526b-4802-976b-57e316c089e3" />
+
 Selanjutnya, bagian ini akan menguraikan tahapan-tahapan data preparation untuk masing-masing pendekatan secara terstruktur.
 
 ### Preparation Data Content-Based Filtering

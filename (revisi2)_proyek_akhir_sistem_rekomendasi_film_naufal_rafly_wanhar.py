@@ -453,7 +453,7 @@ movie_recommendations("Johnny English Strikes Again (2018)", k=10)
 
 """## 📊 Evaluasi Content-Based Filtering dengan Recall@10
 
-Sistem rekomendasi dijalankan untuk film **"Johnny English Strikes Again (2018)"** dengan `k=10`, yang berarti menampilkan 10 rekomendasi teratas berdasarkan kemiripan (genre).
+Sistem rekomendasi dijalankan untuk film **"Johnny English Strikes Again (2018)"** dengan `k=10`, yang berarti menampilkan 10 rekomendasi teratas berdasarkan kemiripan (judul, genre).
 
 Berikut adalah hasil rekomendasinya:
 
